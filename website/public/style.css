@@ -1,0 +1,183 @@
+﻿/* General Reset */
+body {
+    font-family: 'Cascadia Code';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2e2e2e; /* Dark grey background */
+    color: #ffffff; /* Ensure default text is white */
+}
+
+/* Welcome Overlay Styling */
+#welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+
+/* Welcome Message Styling */
+#welcome-message {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust based on your design */
+    background-color: black; /* Change to black background */
+    overflow: hidden; /* Ensure images don’t overflow */
+}
+
+/* Banner Images Styling */
+.banner-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    .banner-images img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Ensures images cover the area without stretching */
+    }
+
+/* Adjust positions of images */
+.banner-image1 {
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+}
+
+.banner-image2 {
+    z-index: 2;
+    top: 60px; /* Adjust vertical position */
+    left: 50px; /* Adjust horizontal position */
+}
+
+/* Container for Centered Content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; /* Add black background to container */
+    color: #ffffff; /* Ensure text is white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover effect for container */
+    .container:hover {
+        transform: scale(1.02); /* Slightly increase the size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow to create a pop-out effect */
+    }
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #2e2e2e; /* Set section background to black */
+    color: #ffffff; /* Ensure text is white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover effect for sections */
+    section:hover {
+        transform: scale(1.05); /* Slightly increase the size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow to create a pop-out effect */
+    }
+
+/* Heading Styling */
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Ensure heading text is white */
+}
+
+/* Project Box Styling */
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2e2e2e; /* Change project box background to black */
+    color: #ffffff; /* Ensure project text is white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover effect for project boxes */
+    .project:hover {
+        transform: scale(1.05); /* Slightly increase the size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow to create a pop-out effect */
+    }
+
+/* Banner Styling */
+#banner {
+    transition: opacity 0.5s ease-out;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: black; /* Set section background to black */
+    color: #ffffff; /* Ensure text is white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center align text and content */
+}
+
+/* Contact Info Container */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+}
+
+/* Contact Item Styling */
+.contact-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Ensure text color is white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Contact Item Hover Effect */
+    .contact-item:hover {
+        transform: scale(1.05); /* Slightly increase the size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow to create a pop-out effect */
+    }
+
+/* Contact Icon Styling */
+.contact-icon {
+    width: 30px; /* Set icon size */
+    height: 30px; /* Set icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
